@@ -1,12 +1,19 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #fff;
   font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  background-color: #fff;
+  color: #26272d;
+}
+
+img {
+  max-width: 100%;
 }
 
 .inner-container {
   max-width: 1200px;
+  margin: auto;
 }
 
 .header {
@@ -58,4 +65,59 @@ a.header-link--app {
 
 a.header-link--app i.fa-apple {
   margin-right: 10px;
+}
+
+
+.splash {
+  background-image: url('../img/banner_background.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-top: 90px;
+}
+
+.splash-title {
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 55px;
+  font-size: 62px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.splash-text {
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 60px;
+  font-size: 20px;
+  text-align: center;
+  color: #8c8f94;
+}
+
+.splash-button {
+  margin-bottom: 55px;
+  text-align: center;
+}
+
+.splash-button a {
+  text-decoration: none;
+  color: #26272d;
+  padding: 15px 40px;
+  border: 1px solid #dadcde;
+  border-radius: 40px;
+  transition: 0.2s opacity;
+}
+
+.splash-button a:hover {
+  opacity: 0.8;
+}
+
+.splash-button a i.fa-play {
+  margin-right: 14px;
+  font-size: 13px;
+}
+
+.splash-phone {
+  height: 450px;
+  overflow: hidden;
+  text-align: center;
 }
