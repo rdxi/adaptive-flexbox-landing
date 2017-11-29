@@ -209,7 +209,6 @@ a.header-link--app i.fa-apple {
 
 .phone .inner-container {
   display: flex;
-  padding-left: 0;
 }
 
 .phone-item--image {
@@ -253,3 +252,56 @@ a.header-link--app i.fa-apple {
   top: -1px;
 }
 
+/*  */
+
+.map {
+  padding-bottom: 220px;
+  overflow: hidden;
+}
+
+.map .inner-container {
+  display: flex;
+}
+
+.map-item--image {
+  width: 55%;
+  position: relative;
+}
+
+.map-item--image img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: none;
+}
+
+.map-item--text {
+  width: 45%;
+  padding-right: 5%;
+}
+
+.map-item-title {
+  margin-bottom: 50px;
+}
+
+.map-item-text {
+  margin-bottom: 70px;
+  font-size: 20px;
+  color: #8c8f94;
+}
+
+.map-item-partners {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.map-item-partners-title {
+  width: 100%;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+
+.map-item-partners-logo {
+  margin-right: 30px;
+}
