@@ -11,12 +11,50 @@ img {
   max-width: 100%;
 }
 
+h1 {
+  margin: 0;
+  font-size: 62px;
+  font-weight: 500;
+}
+
+h2 {
+  margin: 0;
+  font-size: 42px;
+  font-weight: 500;
+}
+
+.button-small {
+  padding: 8px 18px;
+  border: 1px solid #e9e9ea;
+  border-radius: 18px;
+  text-decoration: none;
+  color: #26272d;
+  transition: 0.2s opacity;
+}
+
+.button-small:hover {
+  opacity: 0.8;
+}
+
+.button-small--blue {
+  border-color: transparent;
+  background-color: #267df4;
+  color: #fff;
+}
+
+.button-small--green {
+  border-color: transparent;
+  background-color: #6fc754;
+  color: #fff;
+}
+
 .inner-container {
   max-width: 1200px;
   margin: auto;
   padding-left: 50px;
   padding-right: 50px;
 }
+
 
 .header {
   padding-top: 60px;
@@ -66,10 +104,7 @@ a.header-link--disabled:hover {
 }
 
 a.header-link--app {
-  background-color: #267df4;
   color: #fff;
-  padding: 10px 20px;
-  border-radius: 20px;
 }
 
 a.header-link--app i.fa-apple {
@@ -88,8 +123,6 @@ a.header-link--app i.fa-apple {
   max-width: 800px;
   margin: auto;
   margin-bottom: 55px;
-  font-size: 62px;
-  font-weight: 500;
   text-align: center;
 }
 
@@ -108,16 +141,9 @@ a.header-link--app i.fa-apple {
 }
 
 .splash-button a {
-  text-decoration: none;
-  color: #26272d;
   padding: 15px 40px;
   border: 1px solid #dadcde;
   border-radius: 40px;
-  transition: 0.2s opacity;
-}
-
-.splash-button a:hover {
-  opacity: 0.8;
 }
 
 .splash-button a i.fa-play {
@@ -174,5 +200,56 @@ a.header-link--app i.fa-apple {
 .features-item-text {
   font-size: 18px;
   color: #8c8f94;
+}
+
+
+.phone {
+  padding-bottom: 220px;
+}
+
+.phone .inner-container {
+  display: flex;
+  padding-left: 0;
+}
+
+.phone-item--image {
+  width: 55%;
+  padding-right: 5%;
+  position: relative;
+}
+
+.phone-item--image img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  max-width: none;
+}
+
+.phone-item--text {
+  width: 45%;
+  padding-left: 5%;
+  padding-top: 130px;
+  padding-bottom: 250px;
+}
+
+.phone-item-title {
+  margin-bottom: 50px;
+}
+
+.phone-item-text {
+  margin-bottom: 70px;
+  font-size: 20px;
+  color: #8c8f94;
+}
+
+.phone-item-button--hack {
+  margin-right: 20px;
+}
+
+.phone-item-button--hack i.fa-arrow-right {
+  padding-left: 30px;
+  font-size: 12px;
+  position: relative;
+  top: -1px;
 }
 
