@@ -35,7 +35,7 @@
       <h1 class="splash-title">What happens tomorrow?</h1>
       <div class="splash-text">The sight of the tumblers restored Bob Sawyer to a degree of equanimity which he had not possessed since his interview with his landlady. His face brightened up, and he began to feel quite convivial.</div>
       <div class="splash-button">
-        <a href="#" class="button-small"><i class="fa fa-play"></i>Watch Video</a>
+        <a class="button-small js-modal-show"><i class="fa fa-play"></i>Watch Video</a>
       </div>
       <div class="splash-phone"><img src="img/header_iphone.png" alt="iphone"></div>
     </div>
@@ -256,5 +256,17 @@
     </div>
   </footer>
 
+  <div class="modal-overlay js-modal-hide" style="display: none;">
+    <div class="modal">
+      <div class="modal-title">Modal Title</div>
+      <div class="modal-text">The sight of the tumblers restored Bob Sawyer to a degree of equanimity which he had not possessed since his interview with his landlady. His face brightened up, and he began to feel quite convivial.</div>
+      <div class="modal-button">
+        <button class="button-small button-small--green js-modal-hide">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
