@@ -34,6 +34,22 @@ h3 {
   font-weight: 400;
 }
 
+@media (max-width: 420px) {
+  h1 {
+    font-size: 52px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 400;
+  }
+}
+
 a {
   transition: 0.2s opacity;
 }
@@ -77,6 +93,13 @@ a:hover {
   padding-right: 50px;
 }
 
+@media (max-width: 420px) {
+  .inner-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 .header {
   z-index: 100;
   position: fixed;
@@ -85,6 +108,13 @@ a:hover {
   padding-bottom: 60px;
   background-color: transparent;
   transition: 0.2s all;
+}
+
+@media (max-width: 420px) {
+  .header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 .header.is-scrolling {
@@ -124,6 +154,12 @@ a:hover {
     display: block;
     left: 50px;
     top: -4px;
+  }
+}
+
+@media (max-width: 420px) {
+  a.header-menu-toggle--mobile {
+    left: 20px;
   }
 }
 
@@ -178,8 +214,15 @@ a.header-link--app i.fa-apple {
   background-image: url('../img/banner_background.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  /* padding-top: 90px; */
   padding-top: 240px;
+}
+
+@media (max-width: 420px) {
+  .splash {
+    padding-top: 180px;
+    background-size: auto;
+    background-position: 50% 100%;
+  }
 }
 
 .splash-title {
@@ -209,6 +252,12 @@ a.header-link--app i.fa-apple {
   border-radius: 40px;
 }
 
+@media (max-width: 420px) {
+  .splash-button a {
+    background-color: #fff;
+  }
+}
+
 .splash-button a i.fa-play {
   margin-right: 14px;
   font-size: 13px;
@@ -220,6 +269,11 @@ a.header-link--app i.fa-apple {
   text-align: center;
 }
 
+@media (max-width: 420px) {
+  .splash-phone {
+    height: 340px;
+  }
+}
 
 .features {
   padding-top: 120px;
@@ -229,6 +283,12 @@ a.header-link--app i.fa-apple {
 @media (max-width: 820px) {
   .features {
     padding-bottom: 60px;
+  }
+}
+
+@media (max-width: 820px) {
+  .features {
+    padding-top: 60px;
   }
 }
 
@@ -248,6 +308,25 @@ a.header-link--app i.fa-apple {
   padding-left: 5%;
 }
 
+@media (max-width: 420px) {
+  .features .inner-container {
+    flex-wrap: wrap;
+  }
+
+  .features-item {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .features-item:nth-child(1) {
+    padding-right: 0;
+  }
+
+  .features-item:nth-child(2) {
+    padding-left: 0;
+  }
+}
+
 .features-item-icon {
   margin-bottom: 35px;
 }
@@ -260,10 +339,23 @@ a.header-link--app i.fa-apple {
   width: 42px;
 }
 
+@media (max-width: 420px) {
+  .features-item-icon {
+    width: auto;
+    text-align: center;
+  }
+}
+
 .features-item-title {
   font-size: 26px;
   font-weight: 500;
   margin-bottom: 40px;
+}
+
+@media (max-width: 420px) {
+  .features-item-title {
+    text-align: center;
+  }
 }
 
 .features-item:nth-child(1) .features-item-title br {
@@ -543,13 +635,19 @@ a.header-link--app i.fa-apple {
 }
 
 .email-form input {
+  width: 300px;
   padding: 8px 18px;
   margin: 0;
   border: none;
   box-shadow: none;
   background-color: transparent;
   outline: none;
-  min-width: 300px;
+}
+
+@media (max-width: 820px) {
+  .email-form input {
+    width: auto;
+  }
 }
 
 .email-form .button-small i.fa-arrow-right {
@@ -563,10 +661,17 @@ a.header-link--app i.fa-apple {
 }
 
 .customers .slider {
-  width: 580px;
+  width: 100%;
+  max-width: 580px;
   margin: auto;
   position: relative;
 }
+
+/* @media (max-width: 820px) {
+  .footer-links {
+    padding-right: 15px;
+  }
+} */
 
 .customers .slider-arrow {
   position: absolute;

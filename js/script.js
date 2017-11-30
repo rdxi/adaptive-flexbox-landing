@@ -48,10 +48,10 @@ var sliderHandler = {
 
     this.textElContainer = $('.slider-text-container-inner');
     this.textEl = $('.slider-text');
-    this.textElWidth = this.textEl.width();
 
-    this.photoListeners();
-    this.arrowListeners();
+    this.photoListener();
+    this.arrowListener();
+    this.resizeListener();
 
     this.changePhoto();
     this.changeText();
@@ -59,7 +59,7 @@ var sliderHandler = {
     // this.autoScroll(5000);
   },
 
-  photoListeners: function() {
+  photoListener: function() {
     var self = this;
 
     self.photo.on('click', function() {
@@ -70,7 +70,7 @@ var sliderHandler = {
     });
   },
 
-  arrowListeners: function() {
+  arrowListener: function() {
     var self = this;
 
     $('.slider-arrow').on('click', function() {
@@ -88,6 +88,15 @@ var sliderHandler = {
 
   },
 
+  resizeListener: function() {
+    var self = this;
+
+    $(window).on('resize', function() {
+      self.changePhoto();
+      self.changeText();
+    });
+  },
+
   changePhoto: function() {
     var self = this;
 
@@ -99,7 +108,7 @@ var sliderHandler = {
 
   changeText: function() {
     var self = this;
-    var textElPosition = self.textElWidth * self.currentIndex;
+    var textElPosition = self.textEl.width() * self.currentIndex;
 
     self.textElContainer.css('transform', 'translateX('+ -textElPosition +'px)');
   },
