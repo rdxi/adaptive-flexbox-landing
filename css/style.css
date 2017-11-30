@@ -28,6 +28,12 @@ h2 {
   font-weight: 500;
 }
 
+h3 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 400;
+}
+
 .button-small {
   padding: 8px 18px;
   border: 1px solid #e9e9ea;
@@ -397,6 +403,7 @@ a.header-link--app i.fa-apple {
 .email-title {
   text-align: center;
   padding-bottom: 50px;
+  font-weight: 400;
 }
 
 .email-subtitle {
@@ -404,6 +411,7 @@ a.header-link--app i.fa-apple {
   font-size: 12px;
   text-transform: uppercase;
   color: #8c8f94;
+  padding-bottom: 35px;
 }
 
 .email-form {
@@ -427,9 +435,98 @@ a.header-link--app i.fa-apple {
   box-shadow: none;
   background-color: transparent;
   outline: none;
+  min-width: 300px;
 }
 
 .email-form .button-small i.fa-arrow-right {
   padding-left: 10px;
 }
 
+
+.customers {
+  padding-top: 120px;
+  padding-bottom: 85px;
+}
+
+.customers .slider {
+  width: 580px;
+  margin: auto;
+  position: relative;
+}
+
+.customers .slider-arrow {
+  position: absolute;
+  top: 50px;
+  font-size: 24px;
+  color: #d4d4d5;
+  cursor: pointer;
+}
+
+.customers .slider-arrow--left {
+  left: 0;
+  margin-left: -150px;
+}
+
+.customers .slider-arrow--right {
+  right: 0;
+  margin-right: -150px;
+}
+
+.customers .slider-photos {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.customers .slider-photo {
+  transform: scale(0.7);
+  opacity: 0.5;
+  transition: 0.5s all;
+  cursor: pointer;
+}
+
+.customers .slider-photo--current {
+  transform: scale(1);
+  opacity: 1;
+  cursor: default;
+}
+
+.customers .slider-photo img {
+  border-radius: 50%;
+  transition: 0.5s all;
+}
+
+.customers .slider-photo--current img {
+  box-shadow: 15px 25px 35px #ccc;
+}
+
+.customers .slider-text {
+  text-align: center;
+}
+
+.customers .slider-text-title {
+  padding-bottom: 45px;
+}
+
+.customers .slider-text-message {
+  padding-bottom: 25px;
+  color: #8c8f94;
+}
+
+.customers .slider-text-rating {
+  padding-bottom: 55px;
+  font-size: 22px;
+}
+
+.customers .slider-text-rating .fa-star {
+  color: #f2bc3b;
+}
+
+.customers .slider-text-rating .fa-star--empty {
+  color: #ccc;
+}
+
+.customers .slider-text-name {
+  font-size: 12px;
+  text-transform: uppercase;
+}
