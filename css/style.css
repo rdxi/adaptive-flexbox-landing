@@ -34,6 +34,14 @@ h3 {
   font-weight: 400;
 }
 
+a {
+  transition: 0.2s opacity;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
 .button-small {
   padding: 8px 18px;
   border: 1px solid #e9e9ea;
@@ -68,7 +76,6 @@ h3 {
   padding-right: 50px;
 }
 
-
 .header {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -79,12 +86,14 @@ h3 {
   justify-content: space-between;
 }
 
-.header-logo img {
-  vertical-align: middle;
+.header-logo {
+  display: flex;
+  align-items: center;
 }
 
 .header-menu {
-
+  display: flex;
+  align-items: center;
 }
 
 .header-menu a {
@@ -92,7 +101,7 @@ h3 {
   color: #26272d;
   text-decoration: none;
   margin-right: 30px;
-  transition: 0.2s opacity;
+  /* transition: 0.2s opacity; */
 }
 
 .header-menu--left a:last-child {
@@ -103,9 +112,9 @@ h3 {
   margin-right: 0;
 }
 
-.header-menu a:hover {
+/* .header-menu a:hover {
   opacity: 0.8;
-}
+} */
 
 a.header-link--disabled {
   color: #b5b5b6;
@@ -529,4 +538,79 @@ a.header-link--app i.fa-apple {
 .customers .slider-text-name {
   font-size: 12px;
   text-transform: uppercase;
+}
+
+
+.footer {
+  padding-bottom: 150px;
+}
+
+.footer .inner-container {
+  padding-top: 100px;
+  border-top: 1px solid #f4f4f4;
+  position: relative;
+
+  display: flex;
+}
+
+.footer-column {
+  width: 20%;
+}
+
+.footer-column:nth-child(1) {
+  width: 80%;
+}
+
+.footer-logo {
+  margin-bottom: 25px;
+}
+
+.footer-description {
+  max-width: 260px;
+  margin-bottom: 22px;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #8c8f94;
+}
+
+.footer-social {
+  display: flex;
+}
+
+.footer-social a {
+  margin-right: 22px;
+  color: #bdbec0;
+  /* transition: 0.2s opacity; */
+}
+
+.footer-social a:hover {
+  /* opacity: 0.8; */
+}
+
+.footer-column-title {
+  margin-bottom: 20px;
+  font-size: 12px;
+  text-transform: uppercase
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  padding-right: 5px;
+  font-size: 16px;
+  color: #8c8f94;
+}
+
+.footer-links > div {
+  margin-bottom: 15px;
+}
+
+.footer-links a {
+  color: #8c8f94;
+  /* transition: 0.2s opacity; */
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  /* opacity: 0.8; */
 }
