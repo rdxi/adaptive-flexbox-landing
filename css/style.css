@@ -395,7 +395,23 @@ a.header-link--app i.fa-apple {
 
 .phone .inner-container {
   display: flex;
+  padding-top: 120px;
+  border-top: 1px solid #f4f4f4;
 }
+
+@media (max-width: 820px) {
+  .phone .inner-container {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 420px) {
+  .phone .inner-container {
+    padding-top: 80px;
+    flex-direction: column;
+  }
+}
+
 
 .phone-item--image {
   width: 55%;
@@ -428,10 +444,6 @@ a.header-link--app i.fa-apple {
 }
 
 @media (max-width: 420px) {
-  .phone .inner-container {
-    flex-direction: column;
-  }
-
   .phone-item--image {
     width: 100%;
     padding: 0;
