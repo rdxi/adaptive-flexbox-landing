@@ -288,8 +288,8 @@ a.header-link--app i.fa-apple {
 
 @media (max-width: 420px) {
   .features {
-    padding-top: 60px;
-    padding-bottom: 30px;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 }
 
@@ -316,10 +316,10 @@ a.header-link--app i.fa-apple {
 
   .features-item {
     width: 100%;
-    margin-bottom: 50px;
   }
 
   .features-item:nth-child(1) {
+    margin-bottom: 50px;
     padding-right: 0;
   }
 
@@ -385,6 +385,12 @@ a.header-link--app i.fa-apple {
 @media (max-width: 820px) {
   .phone {
     padding-bottom: 110px;
+  }
+}
+
+@media (max-width: 420px) {
+  .phone {
+    padding-bottom: 80px;
   }
 }
 
@@ -521,7 +527,7 @@ a.header-link--app i.fa-apple {
 
 @media (max-width: 420px) {
   .map {
-    padding-bottom: 60px;
+    padding-bottom: 80px;
   }
 }
 
@@ -637,13 +643,13 @@ a.header-link--app i.fa-apple {
 
 @media (max-width: 820px) {
   .interface {
-    padding-bottom: 90px;
+    padding-bottom: 80px;
   }
 }
 
 @media (max-width: 420px) {
   .interface {
-    padding-top: 70px;
+    padding-top: 80px;
   }
 }
 
@@ -713,7 +719,8 @@ a.header-link--app i.fa-apple {
   }
 
   .interface-phone-image-wrap {
-    top: 318px;
+    /* top: 318px; */
+    top: 326px;
   }
 
   .interface-phone-image {
@@ -731,6 +738,12 @@ a.header-link--app i.fa-apple {
 .email {
   padding-bottom: 120px;
   background-color: #f5f5f8;
+}
+
+@media (max-width: 420px) {
+  .email {
+    padding-bottom: 80px;
+  }
 }
 
 .email-title {
@@ -777,6 +790,22 @@ a.header-link--app i.fa-apple {
   }
 }
 
+@media (max-width: 420px) {
+  .email-form-inner {
+    border: none;
+    text-align: center;
+  }
+
+  .email-form input {
+    width: 100%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #cbcbce;
+    border-radius: 25px;
+    background-color: #f5f5f8;
+  }
+}
+
 .email-form .button-small i.fa-arrow-right {
   padding-left: 10px;
 }
@@ -785,6 +814,13 @@ a.header-link--app i.fa-apple {
 .customers {
   padding-top: 120px;
   padding-bottom: 85px;
+}
+
+@media (max-width: 420px) {
+  .customers {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 }
 
 .customers .slider {
@@ -835,6 +871,12 @@ a.header-link--app i.fa-apple {
   opacity: 0.5;
   transition: 0.5s all;
   cursor: pointer;
+}
+
+@media (max-width: 420px) {
+  .customers .slider-photo {
+    width: 30%;
+  }
 }
 
 .customers .slider-photo--current {
@@ -914,25 +956,23 @@ a.header-link--app i.fa-apple {
   }
 
   .footer .inner-container {
+    padding-top: 80px;
     flex-direction: column;
   }
 }
 
 .footer-column {
-  /* width: 20%; */
   width: 160px;
   margin-right: 30px;
 }
 
 .footer-column:first-child {
-  /* width: 70%; */
   width: 300px;
-  margin-right: auto;
   padding-right: 30px;
+  margin-right: auto;
 }
 
 .footer-column:last-child {
-  /* width: 70%; */
   width: 100px;
   margin-right: 0;
 }
