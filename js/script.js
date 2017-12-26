@@ -60,77 +60,72 @@ var sliderHandler = {
   },
 
   photoListener: function() {
-    var self = this;
+    var that = this;
 
-    self.photo.on('click', function() {
-      self.currentIndex = $(this).index();
+    this.photo.on('click', function() {
+      that.currentIndex = $(this).index();
 
-      self.changePhoto();
-      self.changeText();
+      that.changePhoto();
+      that.changeText();
     });
   },
 
   arrowListener: function() {
-    var self = this;
+    var that = this;
 
     $('.slider-arrow').on('click', function() {
       var isArrowRight = $(this).hasClass('slider-arrow--right');
 
       if (isArrowRight) {
-        self.increaseCurrentIndex();
+        that.increaseCurrentIndex();
       } else {
-        self.decreaseCurrentIndex();
+        that.decreaseCurrentIndex();
       }
 
-      self.changePhoto();
-      self.changeText();
+      that.changePhoto();
+      that.changeText();
     });
 
   },
 
   resizeListener: function() {
-    var self = this;
+    var that = this;
 
     $(window).on('resize', function() {
-      self.changePhoto();
-      self.changeText();
+      that.changePhoto();
+      that.changeText();
     });
   },
 
   changePhoto: function() {
-    var self = this;
-
-    self.photo.eq(self.currentIndex)
+    this.photo.eq(this.currentIndex)
          .addClass(this.currentPhotoClassName)
          .siblings()
          .removeClass(this.currentPhotoClassName);
   },
 
   changeText: function() {
-    var self = this;
-    var textElPosition = self.textEl.width() * self.currentIndex;
+    var textElPosition = this.textEl.width() * this.currentIndex;
 
-    self.textElContainer.css('transform', 'translateX('+ -textElPosition +'px)');
+    this.textElContainer.css('transform', 'translateX('+ -textElPosition +'px)');
   },
 
   increaseCurrentIndex: function() {
-    var self = this;
-    self.currentIndex = (self.currentIndex < self.photo.length - 1) ? self.currentIndex + 1 : 0;
+    this.currentIndex = (this.currentIndex < this.photo.length - 1) ? this.currentIndex + 1 : 0;
   },
 
   decreaseCurrentIndex: function() {
-    var self = this;
-    self.currentIndex = (self.currentIndex > 0) ? self.currentIndex - 1 : self.photo.length - 1;
+    this.currentIndex = (this.currentIndex > 0) ? this.currentIndex - 1 : this.photo.length - 1;
   },
 
   autoScroll: function(interval) {
-    var self = this;
+    var that = this;
     var scrollInterval = interval || 2000;
 
     setInterval(function() {
-      self.increaseCurrentIndex();
-      self.changePhoto();
-      self.changeText();
+      that.increaseCurrentIndex();
+      that.changePhoto();
+      that.changeText();
     }, scrollInterval);
   }
 };
